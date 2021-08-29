@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{console?.name}}</mat-card-title>
+    <mat-card-subtitle>Console Directory</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p matLine> Brand: {{console?.brand}}</p>
+    <p matLine> Generation: {{console?.generation}}</p>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="navigateBack()">Return</button>
+  </mat-card-actions>
+</mat-card>

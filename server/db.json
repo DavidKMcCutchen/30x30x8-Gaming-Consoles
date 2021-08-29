@@ -1,0 +1,16 @@
+{
+  "consoles": [
+    {
+      "id": 1,
+      "name": "PlayStation 5",
+      "brand": "Sony",
+      "generation": "Current Generation"
+    },
+    {
+      "id": 2,
+      "name": "Xbox 360",
+      "brand": "Microsoft",
+      "generation": "Past Generation"
+    }
+  ]
+}

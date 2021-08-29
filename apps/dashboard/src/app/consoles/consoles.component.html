@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <consoles-console-list
+        [consoles]="allConsoles$ | async"
+        (selected)="selectConsole($event)"
+        (deleted)="deleteConsole($event)"
+        (consoleViewed)="viewConsole($event)"
+      ></consoles-console-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <consoles-console-details
+        [console]="selectedConsole$ | async"
+        (saved)="saveConsole($event)"
+        (cancelled)="resetConsole()"
+        [form]="form"
+      ></consoles-console-details>
+    </div>
+  </div>

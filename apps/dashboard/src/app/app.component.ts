@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@consoles/api-interfaces';
+
 
 @Component({
   selector: 'consoles-root',
@@ -8,6 +7,9 @@ import { Message } from '@consoles/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title= 'List of Popular Gaming Consoles';
+  links= [
+    {path: '', icon: 'home', title: 'Home'},
+    {path: 'consoles', icon: 'view_list', title: 'Consoles'}
+  ]
 }
